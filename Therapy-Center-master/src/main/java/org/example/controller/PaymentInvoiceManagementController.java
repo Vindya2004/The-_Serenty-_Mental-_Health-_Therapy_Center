@@ -217,7 +217,7 @@ public class PaymentInvoiceManagementController implements Initializable {
             InputStream resourceAsStream = getClass().getResourceAsStream("/reports/paymentsReport.jrxml");
             JasperDesign load = JRXmlLoader.load(resourceAsStream);
             JasperReport jasperReport = JasperCompileManager.compileReport(load);
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mental_database", "root", "PHW#84#jeor");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mental_theropy", "root", "Ijse@1234");
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, null, connection);
             JasperViewer.viewReport(jasperPrint);
         }catch (JRException|SQLException e){

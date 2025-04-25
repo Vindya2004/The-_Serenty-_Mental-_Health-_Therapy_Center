@@ -202,7 +202,7 @@ public class TherapistManagementController implements Initializable {
         JasperReport jasperReport = JasperCompileManager.compileReport(load);
         Connection connection;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mental_database", "root", "PHW#84#jeor");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mental_theropy", "root", "Ijse@1234");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
